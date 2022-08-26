@@ -1,0 +1,51 @@
+header {
+    background: black;
+    color: #ffffff;
+    height: 5rem;
+    margin-top: 0;
+    display: flex;
+}
+
+header h3 {
+    margin: 2.313rem
+}
+
+div {
+    background-color: #ffffff;
+}
+
+section {
+    width: 45.188rem;
+    border: 1px solid #999999;
+    margin: 2.375rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* POST */
+div .post-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    margin-top: 1.438rem;
+}
+
+div .content-list-header {
+    width: 45.188rem;
+    height: 4.375rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.MuiGrid-root {
+    background: none;
+}
+
+/* Home Container */
+
+
