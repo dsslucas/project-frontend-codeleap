@@ -26,12 +26,17 @@ Avaliable at [this link](https://codeleap.notion.site/Job-openings-be9610b2d1374
 
 ## Result
 
+Sign In.
 ![Sign In](/src/assets/start.png)
 
+Home page with POST and GET.
 ![Home page with POST and GET](/src/assets/post%20and%20get.png)
 
+Edit the post published only by user.
 ![Edit the post](/src/assets/edit.png)
 
+Delete the post published only by user.
 ![Delete the post](/src/assets/delete.png)
 
+Alert if the user press F5 at Homepage. Doing this, the username will be released and making it impossible to use POST, DELETE and PATCH requests.
 ![If the user update the page at Home](/src/assets/error.png)
