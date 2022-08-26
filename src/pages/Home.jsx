@@ -38,7 +38,7 @@ class Home extends Component {
     };
 
     render() {
-        const { username, title, content } = this.props
+        const { username } = this.props
 
         //Variables on Portuguese, just for manipulate with Redux
         const { titulo, conteudo, listGetRequest, dialogEdit, dialogDelete, idPostSelected } = this.state
@@ -46,7 +46,7 @@ class Home extends Component {
         // POST method, which send to Actions
         const nextStep = () => {
             if (titulo.length > 0 && conteudo.length > 0) {
-                post({ ... this.state, username })
+                post({ ...this.state, username })
                 this.setState({ titulo: '', conteudo: '' })
             }
         }
