@@ -38,7 +38,7 @@ class Signup extends Component {
         return (
             <Container 
                 style={{
-                    width: '31.25rem',
+                    maxWidth: '500px',
                     overflowY: 'hidden',
                 }}
             >

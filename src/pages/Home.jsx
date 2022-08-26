@@ -99,7 +99,7 @@ class Home extends Component {
         }
 
         return (
-            <Container 
+            <Container
                 fixed
                 style={{
                     paddingLeft: '0',
@@ -121,20 +121,20 @@ class Home extends Component {
                         </DialogContent>
                         <DialogActions>
 
-                                <Button
-                                    onClick={() => this.setState({ dialogDelete: false })}
-                                    variant="outlined"
-                                    style={{color: '#000000'}}
-                                >
-                                    Cancel
-                                </Button>
-                                <Button
-                                    onClick={() => deletePost()} autoFocus
-                                    variant="outlined"
-                                    style={{color: '#000000'}}
-                                >
-                                    OK
-                                </Button>
+                            <Button
+                                onClick={() => this.setState({ dialogDelete: false })}
+                                variant="outlined"
+                                style={{ color: '#000000' }}
+                            >
+                                Cancel
+                            </Button>
+                            <Button
+                                onClick={() => deletePost()} autoFocus
+                                variant="outlined"
+                                style={{ color: '#000000' }}
+                            >
+                                OK
+                            </Button>
                         </DialogActions>
                     </Dialog>
                 )}
@@ -202,37 +202,52 @@ class Home extends Component {
 
                 <section>
                     <div className='post-box'>
-                        <h4>What's on your mind?</h4>
+                        <Grid>
+                            <Grid xs={12}>
+                                <h4>What's on your mind?</h4>
+                            </Grid>
 
-                        <label>Title</label>
-                        <TextField
-                            autoFocus
-                            margin="dense"
-                            id="title"
-                            type="text"
-                            fullWidth
-                            variant="standard"
-                            onChange={(e) => this.setState({ titulo: e.target.value })}
-                        />
+                            <Grid xs={12}>
+                                <label>Title</label>
+                                <TextField
+                                    autoFocus
+                                    margin="dense"
+                                    id="title"
+                                    type="text"
+                                    fullWidth
+                                    variant="standard"
+                                    onChange={(e) => this.setState({ titulo: e.target.value })}
+                                />
+                            </Grid>
 
-                        <label>Content</label>
-                        <TextField
-                            autoFocus
-                            margin="dense"
-                            id="title"
-                            type="text"
-                            fullWidth
-                            variant="standard"
-                            onChange={(e) => this.setState({ conteudo: e.target.value })}
-                        />
+                            <Grid xs={12}>
+                                <label>Content</label>
+                                <TextField
+                                    autoFocus
+                                    margin="dense"
+                                    id="title"
+                                    type="text"
+                                    fullWidth
+                                    variant="standard"
+                                    onChange={(e) => this.setState({ conteudo: e.target.value })}
+                                />
+                            </Grid>
 
-                        <Button
-                            variant="contained"
-                            onClick={() => nextStep()}
-                            style={{ marginTop: '2.188rem', marginBottom: '1.813rem', background: '#000000', width: '111px', right: '-33.125rem' }}
-                        >
-                            CREATE
-                        </Button>
+                            <Grid xs={12} style={{display: 'flex', justifyContent: 'right'}}>
+                                <Button
+                                    variant="contained"
+                                    onClick={() => nextStep()}
+                                    style={{ 
+                                        marginTop: '2.188rem',
+                                        marginBottom: '1.813rem',
+                                        background: '#000000',
+                                        width: '6.938rem'
+                                    }}
+                                >
+                                    CREATE
+                                </Button>
+                            </Grid>
+                        </Grid>
                     </div>
                 </section>
 
@@ -244,7 +259,7 @@ class Home extends Component {
                                 container spacing={0}
                                 style={{ background: '#000000', alignItems: 'center', color: '#ffffff' }}
                             >
-                                <Grid item xs={10}>
+                                <Grid item xs={9} md={10}>
                                     <h4
                                         style={{ marginLeft: '1.875rem' }}
                                     >{list.title}</h4>
@@ -252,8 +267,8 @@ class Home extends Component {
 
                                 {list.username === username && (
                                     <>
-                                        <Grid 
-                                            item xs={1}
+                                        <Grid
+                                            item xs={1} md={1}
                                             style={{
                                                 display: 'flex',
                                                 justifyContent: 'right'
@@ -261,15 +276,15 @@ class Home extends Component {
                                         >
                                             <Button
                                                 onClick={() => DeleteButton(list.id)}
-                                                style={{ 
+                                                style={{
                                                     color: '#ffffff'
                                                 }}
                                             >
                                                 <DeleteForeverIcon />
                                             </Button>
                                         </Grid>
-                                        <Grid 
-                                            item xs={1}
+                                        <Grid
+                                            item xs={1} md={1}
                                             style={{
                                                 display: 'flex',
                                                 justifyContent: 'center'
