@@ -29,7 +29,7 @@ Program avaliable at [this link](https://codeleap.notion.site/Job-openings-be961
 
 ## Result
 
-### Mobile devices (with less than 768px)
+### Mobile devices (width less than 768px)
 
 ![Sign In](/src/assets/mobile/signin.png)
 ![Home](/src/assets/mobile/home.png)
