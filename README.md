@@ -25,25 +25,34 @@ Program avaliable at [this link](https://codeleap.notion.site/Job-openings-be961
 ## Improvements
 - If the user press F5, the website redirect the user for the Sign In page
 - Button colors change the color if the user type some thing on Inputs
+- Responsivity for smaller screens
 
 ## Result
 
+### Mobile devices (with less than 768px)
+
+![Sign In](/src/assets/mobile/signin.png)
+![Home](/src/assets/mobile/home.png)
+![Edit](/src/assets/mobile/edit.png)
+![Delete](/src/assets/mobile/delete.png)
+
+### Desktops (width more than 768px)
 Sign In.
 
-![Sign In](/src/assets/start.png)
+![Sign In](/src/assets/desktop/start.png)
 
 Home page with POST and GET.
 
-![Home page with POST and GET](/src/assets/post%20and%20get.png)
+![Home page with POST and GET](/src/assets/desktop/post%20and%20get.png)
 
 Edit the post published only by user.
 
-![Edit the post](/src/assets/edit.png)
+![Edit the post](/src/assets/desktop/edit.png)
 
 Delete the post published only by user.
 
-![Delete the post](/src/assets/delete.png)
+![Delete the post](/src/assets/desktop/delete.png)
 
 Alert if the user press F5 at Homepage. Doing this, the username will be released and making it impossible to use POST, DELETE and PATCH requests.
 
-![If the user update the page at Home](/src/assets/error.png)
+![If the user update the page at Home](/src/assets/desktop/error.png)
