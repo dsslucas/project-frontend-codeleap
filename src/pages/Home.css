@@ -15,7 +15,7 @@ div {
 }
 
 section {
-    width: 45.188rem;
+    /*width: 45.188rem;*/
     border: 1px solid #999999;
     margin: 2.375rem;
 
@@ -33,6 +33,12 @@ section {
 @media screen and (orientation: landscape) {
     section{
         width: auto
+    }
+}
+
+@media screen and (min-width: 900px) {
+    section {
+        width: 45.188rem;
     }
 }
 
