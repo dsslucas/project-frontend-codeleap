@@ -313,7 +313,7 @@ class Home extends Component {
                                 }}
                             >
                                 <Grid item xs={6}>
-                                    <span>
+                                    <span style={{color: '#777777'}}>
                                         @{list.username}
                                     </span>
                                 </Grid>
@@ -322,7 +322,8 @@ class Home extends Component {
                                     <span
                                         style={{
                                             display: 'flex',
-                                            justifyContent: 'right'
+                                            justifyContent: 'right',
+                                            color: '#777777'
                                         }}
                                     >
                                         {
