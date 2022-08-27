@@ -217,6 +217,7 @@ class Home extends Component {
                                     fullWidth
                                     variant="standard"
                                     onChange={(e) => this.setState({ titulo: e.target.value })}
+                                    value={titulo}
                                 />
                             </Grid>
 
@@ -230,6 +231,7 @@ class Home extends Component {
                                     fullWidth
                                     variant="standard"
                                     onChange={(e) => this.setState({ conteudo: e.target.value })}
+                                    value={conteudo}
                                 />
                             </Grid>
 
