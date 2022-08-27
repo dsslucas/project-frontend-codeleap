@@ -237,10 +237,12 @@ class Home extends Component {
                                 <Button
                                     variant="contained"
                                     onClick={() => nextStep()}
+                                    disabled={titulo.length === 0 || conteudo.length === 0 ? true : false}
                                     style={{ 
                                         marginTop: '2.188rem',
                                         marginBottom: '1.813rem',
-                                        background: '#000000',
+                                        color: '#ffffff',
+                                        background: ((titulo.length === 0 || conteudo.length === 0) ? '#555555' : '#000000'),
                                         width: '6.938rem'
                                     }}
                                 >
