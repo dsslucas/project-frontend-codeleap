@@ -24,7 +24,13 @@ section {
     justify-content: center;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 900px) and (orientation: portrait) {
+    section{
+        width: auto
+    }
+}
+
+@media screen and (orientation: landscape) {
     section{
         width: auto
     }
