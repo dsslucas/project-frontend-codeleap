@@ -224,7 +224,6 @@ class Home extends Component {
                             <Grid xs={12}>
                                 <label>Content</label>
                                 <TextField
-                                    autoFocus
                                     margin="dense"
                                     id="title"
                                     type="text"
